@@ -1,0 +1,92 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 270px;
+}
+
+.banner__imagem {
+    position: absolute;
+    background-color: #BFDAE6;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.banner__imagem--home {
+    background-image: url('../assets/img/home/banner.jfif');
+}
+
+.banner__titulo {
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* EXPERIENCIA */
+.banner__imagem--experiencia {
+    background-image: url('../assets/img/experiencia/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+/* SETORES */
+.banner__imagem--setores {
+    background-image: url('../assets/img/setores/banner.jfif');
+    background-position: bottom;
+    background-blend-mode: multiply;
+    top: -400px;
+    padding-bottom: 400px;
+    left: -120px;
+    padding-right: 120px;
+}
+
+/* INFORMAÇÕES GERAIS */
+.banner__imagem--informacoes-gerais {
+    background-image: url('../assets/img/informacoes-gerais/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+/* INGRESSO */
+.banner__imagem--ingresso {
+    background-image: url('../assets/img/ingresso/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+/* INGRESSO COMPRADO */
+.banner__imagem--ingresso-comprado {
+    background-image: url('../assets/img/ingresso/ingresso-comprado/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+.banner__titulo--ingresso-comprado {
+    width: 312px;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        min-height: 384px;
+    }
+
+    .banner__titulo {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:1440px) {
+    .banner {
+        min-height: 407px;
+    }
+
+    .banner__titulo {
+        width: 600px;
+    }
+
+    /* INFORMAÇÕES GERAIS */
+    .banner__imagem--informacoes-gerais {
+        background-position-y: -330px;
+    }
+}
